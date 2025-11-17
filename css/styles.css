@@ -1,0 +1,249 @@
+/* 🎨 RESET GENERAL DE ESTILOS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: #000; /* Fondo negro elegante */
+  padding:0;
+}
+
+/* 🔹 ESTILO DEL BODY Y FONDO FIJO */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  background-image: url('../assets/Img_fondo_2.png'); /* Imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* 🔥 FONDO FIJO */
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* 🔹 CAPA OSCURA PARA CONTRASTE DE TEXTO */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+/* 🔹 NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+ /* padding: 1rem 2rem; */
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* 🔹 LOGO */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  height: auto;
+  color: #00ff88;
+}
+
+/* 🔹 ENLACES DE NAVEGACIÓN */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00ff88;
+}
+
+/* 🔹 SECCIÓN HERO (principal) */
+.hero {
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px #00ff88;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* 🔹 BOTONES GENERALES */
+.btn-link button {
+  background-color: #00ff88;
+  color: #000;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+
+.btn-link button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00ff88;
+}
+
+/* 🔹 SECCIONES DE CONTENIDO */
+section {
+  padding: 4rem 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 2rem auto;
+  border-radius: 10px;
+  width: 90%;
+  max-width: center;
+}
+
+/* ================================================================
+   🔸 TARJETAS DE CONTACTO UNA AL LADO DE LA OTRA
+   ================================================================ */
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  flex-wrap: wrap; /* Se adaptan en pantallas pequeñas */
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+/* 🔹 TARJETA INDIVIDUAL */
+.service-card {
+   justify-content: center;
+  background-color: #0c0000;
+  color: #000000;
+  border-radius: 15px;
+  padding: 1.5rem;
+  width: 320px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.1s, box-shadow 0.3s;
+  text-align: center;
+  position: relative;
+  align-items: center;
+  
+}
+
+.service-card:hover {
+   justify-content: center;
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #00ff88;
+}
+
+.service-card i {
+  justify-content: center;
+  font-size: 2rem;
+  color: #00ff88;
+  margin-bottom: 1rem;
+}
+
+/* ================================================================
+   🔸 BOTONES DE MAIL / ACCIONES
+   ================================================================ */
+
+.btn-mail {
+  display: inline-block;
+  background-color: #16a34a; /* verde SyncServe */
+  color: white;
+  padding: 12px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  
+}
+
+.btn-mail:hover {
+  background-color: #128c3a;
+}
+
+/* ================================================================
+   🔸 TARJETAS DE RECURSOS DINÁMICOS
+   ================================================================ */
+
+.resource-card {
+  background-color: rgba(30, 30, 30, 0.85);
+  border: 1px solid #16a34a;
+  border-radius: 0px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+  
+}
+
+.resource-card i {
+  font-size: 2.5rem;
+  color: #16a34a;
+}
+
+/* ================================================================
+   🔸 FOOTER Y ELEMENTOS FINALES
+   ================================================================ */
+
+.volver {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: hsl(126, 31%, 18%);
+    color: white;
+    margin-top: 20px;
+}
+footer p{
+    margin: 0;
+}
+
+/* ================================================================
+   🔸 ADAPTACIÓN MÓVIL
+   ================================================================ */
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 90%;
+  }
+  
+}
+
+

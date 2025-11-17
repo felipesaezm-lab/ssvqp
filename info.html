@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Informacion</title>
+  <link rel="stylesheet" href="styless2.css" />
+
+  <!-- Librería para generar el código QR (versión estable y funcional) -->
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1/qrcode.min.js"></script>
+
+</head>
+
+<body>
+  <!-- Fondo animado -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Contenedor principal -->
+  <main class="container">
+    <section class="profile">
+      <img src="assets/img_logo.png" alt="Foto de perfil" class="profile-pic" />
+      <h1>SMART SERVER</h1>
+      <h1>V Q P</h1>
+
+      <a href="mailto:designloftstore@gmail.com" class="social-icon" title="Email">
+        <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+      </a></div>
+
+      <!-- Contenedor QR dinámico -->
+      <div id="qrcode"></div>
+
+
+      <!-- Botón Volver -->
+      <div class="button-container">
+        <a href="index.html" class="btn-link">
+          <button id="shareBtn">Volver</button>
+        </a>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <p>© 2025 DesignLoftStore - Todos los derechos reservados.</p>
+    <div class="social-links">
+      <a href="#" class="social-icon" title="GitHub">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+      </a>
+      <a href="#" class="social-icon" title="LinkedIn">
+        <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn">
+      </a>
+      <a href="mailto:designloftstore@gmail.com" class="social-icon" title="Email">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+      </a>
+    </div>
+  </footer>
+
+  <!-- Script principal -->
+<script src="script2.js"></script>
+</body>
+</html>

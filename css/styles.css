@@ -22,6 +22,7 @@ body {
   background-attachment: fixed; /* 🔥 FONDO FIJO */
   min-height: 100vh;
   position: relative;
+  text-align: center; /* Centra todo el texto por defecto */
   overflow-x: hidden;
 }
 
@@ -119,7 +120,7 @@ section {
   margin: 2rem auto;
   border-radius: 10px;
   width: 90%;
-  max-width: center;
+  max-width: 1200px; /* Limita el ancho en pantallas grandes */
 }
 
 /* ================================================================
@@ -245,5 +246,3 @@ footer p{
   }
   
 }
-
-

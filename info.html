@@ -4,10 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Informacion</title>
-  <link rel="stylesheet" href="styless2.css" />
+  <link rel="stylesheet" href="css/styles2.css" />
 
   <!-- Librería para generar el código QR (versión estable y funcional) -->
-<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1/qrcode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <style>
+    /* Centra el contenedor principal */
+    .container {
+      text-align: center;
+    }
+    #qrcode {
+      padding: 0; /* Asegura que el contenedor del QR no tenga padding */
+      box-shadow: 0 0 15px #00ff88; /* Efecto de brillo similar al logo */
+      border-radius: 8px; /* Redondea las esquinas del brillo */
+      display: inline-block; /* Ajusta el contenedor al tamaño del QR */
+      line-height: 0; /* Elimina espacio extra si el display es inline-block */
+    }
+    #qrcode table { /* Asegura que la tabla generada por QRCode.js no tenga padding */
+      padding: 0;
+      margin: 0 auto; /* Centra el QR si su contenedor tiene ancho */
+    }
+  </style>
 
 </head>
 
@@ -28,7 +45,7 @@
       </a></div>
 
       <!-- Contenedor QR dinámico -->
-      <div id="qrcode"></div>
+    <div id="qrcode"></div>
 
       <!-- prueba de github-->
       <!-- prueba de github-->

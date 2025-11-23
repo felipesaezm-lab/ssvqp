@@ -2,8 +2,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   const qrContainer = document.getElementById("qrcode");
   if (qrContainer) {
+    // --- INICIO: MODIFICAR CONTENIDO DEL CÓDIGO QR ---
+    // Para cambiar lo que contiene el código QR, modifica el valor de la propiedad "text".
+    // Actualmente, genera un QR con la URL de la página que se está viendo (dinámico).
     new QRCode(qrContainer, {
-      text: "https://ssvqp.cl/", // contenido del QR
+      text: window.location.href, // Puedes cambiar esto por un enlace fijo, ej: "https://ssvqp.cl/"
       width: 128,
       height: 128,
       colorDark: "#00ff99",
@@ -11,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       correctLevel: QRCode.CorrectLevel.H,
     });
   } else {
+    // --- FIN: MODIFICAR CONTENIDO DEL CÓDIGO QR ---
     console.error("No se encontró el contenedor del QR 😢");
   }
 });

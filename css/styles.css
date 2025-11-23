@@ -1,3 +1,11 @@
+/* Estilos generales para el cuerpo */
+body {
+  text-align: center;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+
 /* 🎨 RESET GENERAL DE ESTILOS */
 * {
   margin: 0;
@@ -8,7 +16,7 @@
 header {
   width: 100%;
   background-color: #000; /* Fondo negro elegante */
-  padding:0;
+  padding: 0;
 }
 
 /* 🔹 ESTILO DEL BODY Y FONDO FIJO */
@@ -50,6 +58,11 @@ body {
   z-index: 10;
 }
 
+/* Ajustes para el logo */
+.logo-img {
+  max-width: 150px;
+}
+
 /* 🔹 LOGO */
 .logo {
   display: flex;
@@ -86,6 +99,7 @@ body {
 
 .hero h2 {
   font-size: 2.5rem;
+  font-size: 2.5em;
   margin-bottom: 1rem;
   text-shadow: 0 0 10px #00ff88;
 }
@@ -139,13 +153,17 @@ section {
 
 /* 🔹 TARJETA INDIVIDUAL */
 .service-card {
-   justify-content: center;
-  background-color: #0c0000;
-  color: #000000;
+  justify-content: center;
+  background: #f9f9f9;
+  color: #000000; /* Color de texto para la tarjeta */
   border-radius: 15px;
   padding: 1.5rem;
-  width: 320px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 350px; /* Ancho máximo para la tarjeta */
+  width: 90%; /* Ancho adaptable en pantallas pequeñas */
+  margin: 20px auto; /* Centrado horizontal */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  /* Las siguientes propiedades se eliminan o ajustan para evitar conflictos */
+  /* width: 320px; */
   transition: transform 0.1s, box-shadow 0.3s;
   text-align: center;
   position: relative;
@@ -154,7 +172,7 @@ section {
 }
 
 .service-card:hover {
-   justify-content: center;
+  justify-content: center;
   transform: translateY(-5px);
   box-shadow: 0 0 15px #00ff88;
 }
@@ -165,6 +183,15 @@ section {
   color: #00ff88;
   margin-bottom: 1rem;
 }
+.service-card h3 {
+  margin-top: 10px;
+  color: #333;
+}
+
+.service-card p {
+  color: #555;
+}
+
 
 /* ================================================================
    🔸 BOTONES DE MAIL / ACCIONES
